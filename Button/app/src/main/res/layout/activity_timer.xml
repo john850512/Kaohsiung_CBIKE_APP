@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_timer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user1.button.Timer">
+
+    <!--<Button android:id="@+id/ButtonReload"
+            android:layout_width="80sp"
+            android:text="重新整理"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+            -->
+    <Button android:id="@+id/ButtonTimeCheck"
+        android:layout_width="80sp"
+        android:text="開始時間"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button android:id="@+id/ButtonTimeStart"
+        android:layout_width="100dp"
+        android:text="開始"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button android:id="@+id/ButtonTimeStop"
+        android:layout_width="100sp"
+        android:text="停止"
+        android:layout_height="100dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/ButtonTimeStart"
+        android:layout_toEndOf="@+id/ButtonTimeStart" />
+
+    <TextView android:id="@+id/TextMinute"
+        android:gravity="center"
+        android:text="00"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:layout_height="100sp"
+        android:layout_width="100sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/TextSecond"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/TextMinute"
+        android:layout_toEndOf="@+id/TextMinute" />
+
+    <ImageView
+        app:srcCompat="@drawable/clock"
+        android:id="@+id/imageView"
+        android:layout_height="150sp"
+        android:layout_width="150sp"
+        android:layout_above="@+id/TextMinute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:text="費率"
+        android:layout_height="50dp"
+        android:id="@+id/interest"
+        android:layout_width="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="00"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/TextHour"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:layout_alignBottom="@+id/TextMinute"
+        android:layout_toLeftOf="@+id/TextMinute"
+        android:layout_alignTop="@+id/TextMinute" />
+
+
+</RelativeLayout>
